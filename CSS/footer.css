@@ -1,0 +1,29 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    background-color: #292723;
+    height:30vh;
+    color:white;
+}
+h3 {
+    margin-top:2%;
+    flex: 1; 
+    font-size:2.5rem;
+    margin-bottom:3%;
+    padding:2%;
+    border-bottom:1px solid white;
+}
+footer ul {
+    width:80%;
+    flex: 3; /* Take up 3 parts of the available space */
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom:100%;
+}
+#footer ul li{
+    font-size:1.5rem;
+}

@@ -1,0 +1,129 @@
+.cart_container{
+    min-height:50vh;
+    margin-bottom:10%;
+}
+.cart_container h1{
+    font-size:3rem;
+    padding:2%;
+    text-align:center;
+}
+.profilecontainer{
+    background-color: #FAF798;
+    min-height:50vh;
+    border:solid black 2px;
+    width:60vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom:3%;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+.profilecontainer h1{
+    text-align: center;
+    margin-top:3%;
+}
+.profilecontainer a{
+    width:60%;
+    font-size:2rem;
+    margin-top:3%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    padding:3%;
+    background-color: #EBAD3C;
+    border-radius:10px;
+    display:block;
+    text-decoration:none;
+    color:black;
+    border: black solid 3px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.cardItem_cart {
+    margin-left: auto;
+    padding:3%;
+    margin-right: auto;
+    background-color: #E19C48;
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width:70%;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border:solid black 2px;
+    margin-bottom:3%;
+}
+#cart_image {
+    width:100%;
+    height:40%;
+    grid-column:1/2;
+    margin-top:1%;
+    margin-left: auto;
+    margin-right: 3%;
+    margin-bottom:1%;
+    object-fit:cover;
+}
+#cart_image img {    
+    width: 100%;
+}
+#cart_name {
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size:1.25rem;
+    font-weight: bold;
+    margin-top:2%;
+}
+#cart_name p {
+    font-size:2rem;
+    margin-bottom:10%;
+    width:100%;
+}
+#cart_information{
+    grid-column: 2/3;
+}
+#cart_info{
+    display:flex;
+    width:50%;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+#cart_info p{
+    font-size:1.5rem;
+}
+#remove {
+    grid-column: 3/4;
+    width:100%;
+    margin: 0;
+    display:flex;
+    justify-content: space-evenly;
+    color: #020202;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#remove a{
+    border:black solid 3px;
+    border-radius: 100px;
+    padding:0;
+    margin-top:auto;
+    margin-bottom:auto;
+    width:30%;
+    display:block;
+    text-decoration: none;;
+    color:black;
+}
+#remove h1{
+    margin-top:auto;
+    margin-bottom:auto;
+    font-size:3rem;
+}
+#remove a img{
+    width:50%;
+}
+
+#remove a:hover {
+    background-color: #0a9b11;
+}

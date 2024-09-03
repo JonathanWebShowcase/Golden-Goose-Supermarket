@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+}
+
+.container {
+    padding: 2rem;
+}
+
+#slideshowContainer {
+    position: relative;
+    width: 80vw; /* Set slideshow width to 70vw */
+    max-height: 60vh; /* Set slideshow height to 60vh */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+#container_slider {
+    display: flex;
+    position: relative;
+    width: 100%; /* Ensure slideshow fills its container */
+    height: 100%; /* Ensure slideshow fills its container */
+}
+
+.slide_container {
+    scroll-snap-align: start;
+    flex: 1 0 100%;
+    width: 100%;
+    max-height:50%;
+    position: relative;
+}
+
+.slideshow_image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.slide_text {
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    width:30%;
+    height:30%;
+    top:5%;
+    left: 1rem; /* Adjust the left position as needed */
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    border-radius: 0.5rem;
+    color: #fff;
+    z-index: 1;
+}
+
+.header {
+    font-size: 2rem;
+    margin-bottom: auto;
+    margin-top:auto;
+}
+
+.paragraph {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top:10%;
+    margin-bottom:10%;
+}
+.link{
+    text-decoration: none;
+    display:block;
+    width:70%;
+    padding:3%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.link:hover{
+    background-color: #45a049;
+}
+
+#slideshow_navigation {
+    width:100%;
+    padding:2%;
+    display: flex;
+    justify-content: center;
+    bottom: .5rem; /* Adjust as needed */
+}
+
+#slideshow_navigation a {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #E0A651;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+    margin-right: 1rem;
+}
+
+#slideshow_navigation a:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 2rem;
+        margin-bottom: auto;
+        margin-top:auto;
+    }
+    
+    .paragraph {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        font-size: 1rem;
+        margin-bottom: auto;
+        margin-top:auto;
+    }
+    
+    .paragraph {
+        font-size: .75rem;
+    }
+}
+@media (max-width: 400px) {
+    .header {
+        font-size: .80rem;
+        margin-bottom: auto;
+        margin-top:auto;
+    }
+    
+    .paragraph {
+        font-size: .69rem;
+    }
+}
